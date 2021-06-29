@@ -13,6 +13,10 @@ public class Ball : MonoBehaviour
     private CameraTransitionManager camTransManager;
     [SerializeField] private float reappearGroundOffset;
     [Range (0,1)] [SerializeField] private float shrinkerValue;
+
+    private Vector3 lastFrameVelocity;
+    [SerializeField] private float minVelocity;
+
     private bool dissapearing;
     public bool Dissapearing
     {
@@ -74,6 +78,11 @@ public class Ball : MonoBehaviour
         Dissapearing = false;
     }
 
+    private void Update()
+    {
+        lastFrameVelocity = rb.velocity;   
+    }
+    /*
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Floor"))
@@ -90,9 +99,27 @@ public class Ball : MonoBehaviour
             physicMat.bounceCombine = PhysicMaterialCombine.Minimum;
             print("Minimum");
         }
+    }*/
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Debug.Log("Hago la bounceacion");
+            Bounce(collision.contacts[0].normal);
+        }
     }
 
-    private void ResetVelocities()
+    private void Bounce(Vector3 collisionNormal)
+    {
+        var speed = lastFrameVelocity.magnitude;
+        var direction = Vector3.Reflect(lastFrameVelocity.normalized, collisionNormal);
+
+        Debug.Log("Out Direction: " + direction);
+        rb.velocity = direction * Mathf.Max(speed, minVelocity);
+    }
+
+        private void ResetVelocities()
     {
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
