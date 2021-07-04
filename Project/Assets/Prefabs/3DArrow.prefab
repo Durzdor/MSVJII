@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf59c194d665a7d4589fdeb7d8bb902f, type: 2}
+  - {fileID: 2100000, guid: 89910cf24b9528e449b5952055fd69cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2360838901802335339}
   m_Layer: 0
   m_Name: 3DArrow
-  m_TagString: Untagged
+  m_TagString: 3DArrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ Transform:
   m_GameObject: {fileID: 1628116832236801656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_Children:
   - {fileID: 6735753500196229160}
   - {fileID: 5647636018780065554}
@@ -167,7 +167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf59c194d665a7d4589fdeb7d8bb902f, type: 2}
+  - {fileID: 2100000, guid: 89910cf24b9528e449b5952055fd69cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

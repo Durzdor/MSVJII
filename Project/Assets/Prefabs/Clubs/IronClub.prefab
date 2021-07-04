@@ -48,3 +48,4 @@ MonoBehaviour:
   shotUncontroll: 0.15
   clubSprite: {fileID: 21300000, guid: 9510a5d8b368c5e4e950b61d837e187a, type: 3}
   clubName: Iron
+  hitSound: {fileID: 8300000, guid: bc02b3c11155c7042b574d19418b315a, type: 3}
