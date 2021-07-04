@@ -85,13 +85,13 @@ public class WindObject : MonoBehaviour
         {
             particleSys1.Play();
             particleSys2.Play();
-            print("playing particles");
+
         }
         else
         {
             particleSys1.Stop();
             particleSys2.Stop();
-            print("Stop particles");
+            
         }
 
       
