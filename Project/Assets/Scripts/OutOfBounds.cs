@@ -16,11 +16,4 @@ public class OutOfBounds : MonoBehaviour
         }
     }
 
-
-    
-
-
-
-
-
 }

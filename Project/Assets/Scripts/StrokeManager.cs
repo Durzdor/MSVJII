@@ -1,6 +1,4 @@
-using System.Net.WebSockets;
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class StrokeManager : MonoBehaviour
@@ -14,15 +12,20 @@ public class StrokeManager : MonoBehaviour
     public delegate void MaxStrokesReached();
     public MaxStrokesReached OnMaxStrokesReached;
 
-    private Ball ball;
 
     [SerializeField] private int maxStrokes;
 
     [SerializeField] private float uiArrowYOffset;
-    
+
+    private GameObject ballGO;
+    private Ball ball;
     private Rigidbody playerBallRB;
+
+    [SerializeField] private AudioSource audioSrc;
   
     private float strokeAngle;
+
+    [SerializeField] private GameObject hitArrow;
     public float StrokeAngle
     {
         get
@@ -38,7 +41,7 @@ public class StrokeManager : MonoBehaviour
         
     }
 
-    [SerializeField] private GameObject hitArrow;
+    
 
     public float StrokeForce { get; protected set; }
     public float StrokeForcePerc { get { return StrokeForce / (MaxStrokeForce * currentGolfClub.GeneralStrength); } }
@@ -68,24 +71,67 @@ public class StrokeManager : MonoBehaviour
         Move
     };
 
+    private void FindPlayerBall()
+    {
+        ballGO = GameObject.FindGameObjectWithTag("Player");
+        ball = ballGO.GetComponent<Ball>();
+        playerBallRB = ballGO.GetComponent<Rigidbody>();
+    }
+
+
+    private void EnableArrow(bool isEnabled)
+    {
+
+        hitArrow.SetActive(isEnabled);        
+        hitArrow.transform.position = playerBallRB.transform.position + new Vector3(0, uiArrowYOffset, 0);
+    }
+
+    private void ChangeState(StrokeState newState)
+    {
+        StrokeMode = newState;
+
+        switch (StrokeMode)
+        {
+            case StrokeState.Aiming:
+                ui.EnableDisableFillImage(false);
+                ui.EnableDisableGolfClub(true);
+                EnableArrow(true);
+                break;
+
+            case StrokeState.ForceSet:
+                ui.EnableDisableFillImage(true);
+                break;
+
+            case StrokeState.Hit:
+                EnableArrow(false);
+                ui.EnableDisableFillImage(false);
+                ui.EnableDisableGolfClub(false);
+                HitBall();
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    private void FindArrow()
+    {
+        hitArrow = GameObject.FindGameObjectWithTag("3DArrow");
+    }
+
     void Start()
     {
-        FindPlayerBall();       
+        FindPlayerBall();
         StrokeCount = 0;
         StrokeAngle = (float)startingAngle;
         ChangeState(StrokeState.Aiming);
-        golfClubIndex = -1;
+        golfClubIndex = -1;        
         ChangeGolfClub();
         GameManager.instance.StrokeManagerRef(this);
+        audioSrc = GetComponent<AudioSource>();
     }
 
-    private void FindPlayerBall()
-    {
-
-        GameObject go = GameObject.FindGameObjectWithTag("Player");
-        ball = go.GetComponent <Ball>();
-        playerBallRB = go.GetComponent<Rigidbody>();
-    }
+  
 
     private void ChangeGolfClub()
     {
@@ -107,6 +153,17 @@ public class StrokeManager : MonoBehaviour
         ui.UpdateGolfClub(currentGolfClub.ClubSprite, currentGolfClub.ClubName);
     }
 
+    private void HitBall()
+    {
+        Vector3 forceVec = StrokeForce * Vector3.forward + StrokeForce * Vector3.up * currentGolfClub.VerticalFactorStrength;
+        playerBallRB.AddForce(Quaternion.Euler(0, StrokeAngle, 0) * forceVec, ForceMode.Impulse);
+        StrokeForce = 0;
+        StrokeCount++;
+        audioSrc.clip = currentGolfClub.hitSound;
+        audioSrc.Play();
+        ui.UpdateStrokes(StrokeCount);
+        ChangeState(StrokeState.Move);
+    }
 
     private void Update()
     {
@@ -181,50 +238,11 @@ public class StrokeManager : MonoBehaviour
         }
     }
 
-    private void HitBall()
-    {
-        Vector3 forceVec = StrokeForce * Vector3.forward + StrokeForce * Vector3.up * currentGolfClub.VerticalFactorStrength;
-        playerBallRB.AddForce(Quaternion.Euler(0, StrokeAngle, 0) * forceVec, ForceMode.Impulse);
-        StrokeForce = 0;
-        StrokeCount++;
-        ui.UpdateStrokes(StrokeCount);
-        ChangeState(StrokeState.Move);
-    }
+   
 
-    private void EnableArrow(bool isEnabled)
-    {
-        hitArrow.SetActive(isEnabled);
-        //ui.EnableDisableArrow(isEnabled);
-        hitArrow.transform.position = playerBallRB.transform.position + new Vector3 (0,uiArrowYOffset,0);
-    }
+   
 
 
 
-    private void ChangeState(StrokeState newState)
-    {
-        StrokeMode = newState;
-
-        switch (StrokeMode)
-        {
-            case StrokeState.Aiming:
-                ui.EnableDisableFillImage(false);
-                ui.EnableDisableGolfClub(true);
-                EnableArrow(true);
-                break;
-
-            case StrokeState.ForceSet:
-                ui.EnableDisableFillImage(true);
-                break;
-
-            case StrokeState.Hit:
-                EnableArrow(false);
-                ui.EnableDisableFillImage(false);
-                ui.EnableDisableGolfClub(false);
-                HitBall();
-                break;
-
-            default:
-                break;
-        }
-    }
+    
 }

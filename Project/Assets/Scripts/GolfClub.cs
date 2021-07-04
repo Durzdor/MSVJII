@@ -10,6 +10,7 @@ public class GolfClub : MonoBehaviour
     [Range(0, 1)] [SerializeField] private float shotUncontroll;
     [SerializeField] private Sprite clubSprite;
     [SerializeField] private string clubName;
+    public AudioClip hitSound;
 
     public float GeneralStrength => generalStrength;
     public float VerticalFactorStrength => verticalFactorStrength;

@@ -8,6 +8,7 @@ TagManager:
   - Hole
   - Floor
   - Wall
+  - 3DArrow
   layers:
   - Default
   - TransparentFX
