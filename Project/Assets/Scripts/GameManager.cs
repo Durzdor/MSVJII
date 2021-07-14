@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public StrokeManager strokeManager;
     public Goal goal;
 
+    public bool isPaused;
+
    
 
     public SetGoodPosition OnSetGoodPosition;
@@ -35,6 +37,17 @@ public class GameManager : MonoBehaviour
         strokeManager.OnMaxStrokesReached += OnMaxStrokesReachedHandler;
     }
 
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        //activate pause canvas
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+        //deactivate pause canvas
+    }
     private void OnMaxStrokesReachedHandler()
     {
         lvlManager.OnWonLevelHandler();
@@ -68,7 +81,7 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
 
-            DontDestroyOnLoad(gameObject);           
+            DontDestroyOnLoad(this);           
 
         }
 

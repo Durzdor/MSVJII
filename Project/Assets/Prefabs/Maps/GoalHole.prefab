@@ -57,5 +57,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59e85eaf6c9c244d8d21fa9cd394584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWinStart: 0
+  timeToWinStart: 1
   winMusic: {fileID: 0}

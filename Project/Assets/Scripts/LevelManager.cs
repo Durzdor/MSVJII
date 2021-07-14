@@ -17,6 +17,10 @@ public class LevelManager: MonoBehaviour
     private void Start()
     {    
         levelScores = new int[totalLevels];
+        for (int i = 0; i < totalLevels; i++)
+        {
+            levelScores[i] = -1;
+        }
     }
 
     public void ToNextLevel()
@@ -33,7 +37,7 @@ public class LevelManager: MonoBehaviour
 
 
     public void SetScoreForLevel(int level, int score)
-    {      
+    {
         levelScores[level - 1] = score;
     }
 

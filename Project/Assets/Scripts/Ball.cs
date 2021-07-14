@@ -82,30 +82,12 @@ public class Ball : MonoBehaviour
     {
         lastFrameVelocity = rb.velocity;   
     }
-    /*
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("Floor"))
-        {
-            physicMat.bounceCombine = PhysicMaterialCombine.Maximum;
-            print("Maximum");
-        }
-    }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.collider.CompareTag("Floor"))
-        {
-            physicMat.bounceCombine = PhysicMaterialCombine.Minimum;
-            print("Minimum");
-        }
-    }*/
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            Debug.Log("Hago la bounceacion");
             Bounce(collision.contacts[0].normal);
         }
     }
@@ -113,9 +95,7 @@ public class Ball : MonoBehaviour
     private void Bounce(Vector3 collisionNormal)
     {
         var speed = lastFrameVelocity.magnitude;
-        var direction = Vector3.Reflect(lastFrameVelocity.normalized, collisionNormal);
-
-        Debug.Log("Out Direction: " + direction);
+        var direction = Vector3.Reflect(lastFrameVelocity.normalized, collisionNormal);       
         rb.velocity = direction * Mathf.Max(speed, minVelocity);
     }
 

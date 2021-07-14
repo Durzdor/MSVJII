@@ -57,7 +57,7 @@ public class StrokeManager : MonoBehaviour
 
     [SerializeField] float MaxStrokeForce = 10f;
 
-    [SerializeField] private UI ui;
+    private UI ui;
 
     [SerializeField] private GolfClub[] golfClubsAvailable;
     private GolfClub currentGolfClub;
@@ -122,6 +122,7 @@ public class StrokeManager : MonoBehaviour
     void Start()
     {
         FindPlayerBall();
+        GetUI();
         StrokeCount = 0;
         StrokeAngle = (float)startingAngle;
         ChangeState(StrokeState.Aiming);
@@ -131,7 +132,10 @@ public class StrokeManager : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
     }
 
-  
+  private void GetUI()
+    {
+        ui = GameObject.FindGameObjectWithTag("UI").GetComponent <UI>();
+    }
 
     private void ChangeGolfClub()
     {
@@ -167,6 +171,8 @@ public class StrokeManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.instance.isPaused) return;
+
         switch (StrokeMode)
         {
             case StrokeState.Aiming:

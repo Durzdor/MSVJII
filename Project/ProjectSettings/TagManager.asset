@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - Wall
   - 3DArrow
+  - UI
   layers:
   - Default
   - TransparentFX

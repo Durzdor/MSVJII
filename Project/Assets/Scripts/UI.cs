@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class UI : MonoBehaviour
@@ -11,9 +9,29 @@ public class UI : MonoBehaviour
     [SerializeField] private Text golfClubEquippedName;
     [SerializeField] private Image golfClubEquippedImage;
     [SerializeField] private GameObject golfClub;
-    [SerializeField] private GameObject arrow;
+    [SerializeField] private GameObject scoreSheet;
+    private AudioSource scoreSheetAudioSrc;
+
+    [SerializeField] private Text [] levelScoresText;
+
+    private void Start()
+    {
+        scoreSheetAudioSrc = scoreSheet.GetComponent<AudioSource>();        
+    }
 
     
+
+
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            EnableDisableScoreSheet(!scoreSheet.activeSelf);
+            UpdateScores();
+        }
+    }
 
     public void ChangeFillImageFill(float newFill)
     {
@@ -26,28 +44,38 @@ public class UI : MonoBehaviour
        
     }
 
-    public void ChangeArrowAngle(float angle, float cameraOffsetAngle)
+    public void EnableDisableScoreSheet(bool newState)
     {
-       arrow.transform.rotation = Quaternion.Euler(0, 0, -angle + cameraOffsetAngle + 180);
+        scoreSheet.SetActive(newState);
+        if (newState) GameManager.instance.Pause();
+        else GameManager.instance.Unpause();        
+        if (newState) scoreSheetAudioSrc.Play();
     }
-
-    public void EnableDisableArrow (bool isEnabled)
-    {
-        arrow.SetActive(isEnabled);
-    }
+   
     public void EnableDisableGolfClub(bool newState)
     {
         golfClub.SetActive(newState);
     }
     public void UpdateStrokes (int newStrokes)
     {
-        strokesCount.text = "Strokes count: " + newStrokes.ToString();
+        strokesCount.text = newStrokes.ToString();
     }
 
     public void UpdateGolfClub (Sprite newGolfClubImage, string newGolfClubName)
     {
         golfClubEquippedName.text = newGolfClubName;
         golfClubEquippedImage.sprite = newGolfClubImage;
+    }
+
+    public void UpdateScores()
+    {
+        int[] scores = GameManager.instance.lvlManager.RecallScores();        
+
+        for (int i = 0; i < levelScoresText.Length; i++)
+        {
+            if (scores[i] < 0) levelScoresText[i].text = "";
+            else levelScoresText[i].text = scores[i].ToString();
+        }
     }
 
 

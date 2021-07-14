@@ -46,11 +46,14 @@ public class Camera2 : MonoBehaviour {
 
     private void Update()
     {
+        if (GameManager.instance.isPaused) return;
         CheckChangeToAerealCamera();
     }
 
     void LateUpdate () 
     {
+        if (GameManager.instance.isPaused) return;
+
         // If target
         if (Input.GetMouseButton(1)) 
         {
