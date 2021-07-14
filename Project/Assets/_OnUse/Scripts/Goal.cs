@@ -49,7 +49,6 @@ public class Goal : MonoBehaviour
     {
         sphereColl.enabled = false;
         OnWin?.Invoke();
-
     }
 
 

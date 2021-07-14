@@ -3,29 +3,30 @@
   <component name="ChangeListManager">
     <list default="true" id="035692a5-721d-4d4f-b326-f440d1e6ef6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/Built-In Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/HDRP Samples (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/HDRP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/LWRP Samples (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/LWRP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/Sample Resources.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/URP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/CustomRTTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/HDSRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/LWSRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/PPStackTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 3xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 4xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 572 (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 5xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 6xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 7xx - 9xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/LWSRPTemplates 3xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/LWSRPTemplates 4xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/USRPTemplates 7xx - 9xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/USRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music/Temp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBrush.brush.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Bouncer.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Bouncer.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Floor.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Floor.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Walls.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/PhysicsMaterials/Walls.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Textures/Arrow_Red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Textures/Arrow_Red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Textures/electbubbles.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Textures/electbubbles.jpg.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,9 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/StrokeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/UI.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tUedYqA3gV3tbwCiC9UK020LKR" />
@@ -85,6 +89,7 @@
       <workItem from="1622828231329" duration="129000" />
       <workItem from="1622891599663" duration="333000" />
       <workItem from="1626229292356" duration="1053000" />
+      <workItem from="1626300190784" duration="1376000" />
     </task>
     <servers />
   </component>

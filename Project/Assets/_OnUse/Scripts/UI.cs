@@ -16,20 +16,15 @@ public class UI : MonoBehaviour
 
     private void Start()
     {
-        scoreSheetAudioSrc = scoreSheet.GetComponent<AudioSource>();        
+        scoreSheetAudioSrc = scoreSheet.GetComponent<AudioSource>(); 
+        UpdateScores();
     }
-
-    
-
-
-
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             EnableDisableScoreSheet(!scoreSheet.activeSelf);
-            UpdateScores();
         }
     }
 
@@ -41,7 +36,6 @@ public class UI : MonoBehaviour
     public void EnableDisableFillImage (bool newState)
     {
         canvasFillImageObject.SetActive(newState);
-       
     }
 
     public void EnableDisableScoreSheet(bool newState)
@@ -77,7 +71,4 @@ public class UI : MonoBehaviour
             else levelScoresText[i].text = scores[i].ToString();
         }
     }
-
-
-
 }

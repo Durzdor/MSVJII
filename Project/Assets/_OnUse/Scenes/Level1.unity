@@ -1392,7 +1392,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1077914964, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122282352, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 901621756, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 169687829, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 483968972, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921883797, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1213239518, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489553671502463006, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8290711188508151625, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 693161271680116424, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5041130358168233360, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
 --- !u!4 &1939484730 stripped
 Transform:

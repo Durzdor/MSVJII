@@ -12,10 +12,12 @@ public class LevelManager: MonoBehaviour
 
     public delegate void NextLevel(string levelToLoad);
     public NextLevel OnNextLevel;
+    private UI ui;
 
 
-    private void Start()
-    {    
+    private void Awake()
+    {
+        ui = FindObjectOfType<UI>();
         levelScores = new int[totalLevels];
         for (int i = 0; i < totalLevels; i++)
         {
@@ -49,6 +51,7 @@ public class LevelManager: MonoBehaviour
     public void OnWonLevelHandler()
     {     
         SetScoreForLevel(currentLevel, GameManager.instance.strokeManager.StrokeCount);
+        ui.UpdateScores();
         ToNextLevel();
     }
 
