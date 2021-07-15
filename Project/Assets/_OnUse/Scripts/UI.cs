@@ -16,7 +16,8 @@ public class UI : MonoBehaviour
 
     private void Start()
     {
-        scoreSheetAudioSrc = scoreSheet.GetComponent<AudioSource>(); 
+        scoreSheetAudioSrc = scoreSheet.GetComponent<AudioSource>();
+        GameManager.instance.UIReferenceAssign(this);
         UpdateScores();
     }
 
@@ -25,6 +26,15 @@ public class UI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             EnableDisableScoreSheet(!scoreSheet.activeSelf);
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Debug.LogError($"level score length {levelScoresText.Length}");
+            for (int i = 0; i < levelScoresText.Length; i++)
+            {
+                Debug.Log($"level {i + 1} score is {levelScoresText[i].text}");
+            }
         }
     }
 
@@ -63,12 +73,15 @@ public class UI : MonoBehaviour
 
     public void UpdateScores()
     {
-        int[] scores = GameManager.instance.lvlManager.RecallScores();        
+        int[] scores = GameManager.instance.lvlManager.RecallScores();    
+    
 
         for (int i = 0; i < levelScoresText.Length; i++)
         {
-            if (scores[i] < 0) levelScoresText[i].text = "";
+         
+            if (scores[i] < 0) levelScoresText[i].text = "";           
             else levelScoresText[i].text = scores[i].ToString();
+          
         }
     }
 }

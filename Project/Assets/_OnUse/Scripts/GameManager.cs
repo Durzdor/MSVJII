@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public LevelManager lvlManager;
     public StrokeManager strokeManager;
     public Goal goal;
+    public UI uiReference;
 
     public bool isPaused;
 
@@ -47,6 +48,11 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         //deactivate pause canvas
+    }
+
+    public void UIReferenceAssign (UI uiToAssign)
+    {
+        uiReference = uiToAssign;
     }
     private void OnMaxStrokesReachedHandler()
     {

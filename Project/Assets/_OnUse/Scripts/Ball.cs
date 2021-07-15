@@ -27,10 +27,11 @@ public class Ball : MonoBehaviour
         private set
         {
             dissapearing = value;
+            Debug.Log("Disappear");
         }
     }
 
-    [SerializeField] private PhysicMaterial physicMat;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +46,6 @@ public class Ball : MonoBehaviour
         rb.maxAngularVelocity = Mathf.Infinity;
         camTransManager = FindObjectOfType<CameraTransitionManager>();
         SetKnownGoodPosition(transform.position);
-        physicMat = GetComponent<SphereCollider>().material;      
     }
 
     

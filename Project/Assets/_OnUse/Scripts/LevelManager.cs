@@ -16,8 +16,7 @@ public class LevelManager: MonoBehaviour
 
 
     private void Awake()
-    {
-        ui = FindObjectOfType<UI>();
+    {    
         levelScores = new int[totalLevels];
         for (int i = 0; i < totalLevels; i++)
         {
@@ -51,7 +50,7 @@ public class LevelManager: MonoBehaviour
     public void OnWonLevelHandler()
     {     
         SetScoreForLevel(currentLevel, GameManager.instance.strokeManager.StrokeCount);
-        ui.UpdateScores();
+        GameManager.instance.uiReference.UpdateScores();
         ToNextLevel();
     }
 

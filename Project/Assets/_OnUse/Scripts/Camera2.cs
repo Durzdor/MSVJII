@@ -29,6 +29,7 @@ public class Camera2 : MonoBehaviour {
     // Use this for initialization
     void Start () 
     {
+        target = FindObjectOfType<Ball>().GetComponent<Transform>();
         _cameraOffset = transform.position - target.position;
 
         Vector3 angles = transform.eulerAngles;
