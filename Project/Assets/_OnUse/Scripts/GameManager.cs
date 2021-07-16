@@ -27,9 +27,11 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         MakeSingleton();
+        
     }
     private void Start()
     {
+   
         lvlManager.OnNextLevel += OnNextLevelHandler;
     }
     public void StrokeManagerRef(StrokeManager strokeManagerReference)
