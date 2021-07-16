@@ -17,6 +17,13 @@ public class Ball : MonoBehaviour
     private Vector3 lastFrameVelocity;
     [SerializeField] private float minVelocity;
 
+    [SerializeField] private Vector2 dragRange = new Vector2(0.3f,1f);
+    [SerializeField] private float minVelocityToDrag = 0.1f;
+    private float groundCheckDistance = 0.01f;
+    [SerializeField] private float airDragValue = 0.3f;
+    public float InitialForce { get; set; }
+    private bool IsGrounded => Physics.Raycast(transform.position, -Vector3.up, groundCheckDistance + 0.1f);
+    
     private bool dissapearing;
     public bool Dissapearing
     {
@@ -46,6 +53,7 @@ public class Ball : MonoBehaviour
         rb.maxAngularVelocity = Mathf.Infinity;
         camTransManager = FindObjectOfType<CameraTransitionManager>();
         SetKnownGoodPosition(transform.position);
+        groundCheckDistance = GetComponent<SphereCollider>().bounds.extents.y;
     }
 
     
@@ -78,9 +86,18 @@ public class Ball : MonoBehaviour
         Dissapearing = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        lastFrameVelocity = rb.velocity;   
+        lastFrameVelocity = rb.velocity;
+        if (IsGrounded && rb.velocity.magnitude > minVelocityToDrag)
+        {
+            GroundDrag();
+        }
+
+        if (!IsGrounded)
+        {
+            AirDrag();
+        }     
     }
 
 
@@ -104,4 +121,17 @@ public class Ball : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }
+        
+        private void GroundDrag()
+        {
+            var t = Mathf.InverseLerp(rb.sleepThreshold, InitialForce, rb.velocity.magnitude);
+            var currentDrag = Mathf.Lerp(dragRange.x, dragRange.y , 1 - t);
+            rb.velocity -= (currentDrag * Time.fixedDeltaTime) * rb.velocity;
+        }
+
+        private void AirDrag()
+        {
+            rb.velocity -= (airDragValue * Time.fixedDeltaTime) * rb.velocity;
+        }
+    
 }

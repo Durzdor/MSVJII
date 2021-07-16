@@ -653,6 +653,7 @@ MonoBehaviour:
   lvlManager: {fileID: 756581646}
   strokeManager: {fileID: 0}
   goal: {fileID: 0}
+  uiReference: {fileID: 0}
   isPaused: 0
 --- !u!1001 &798598966
 PrefabInstance:
