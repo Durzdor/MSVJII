@@ -282,7 +282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16100001, y: 0.115}
   m_AnchorMax: {x: 0.8428303, y: 0.9014377}
-  m_AnchoredPosition: {x: -0.13999939, y: -0.08999634}
+  m_AnchoredPosition: {x: -0.13999939, y: -0.08996582}
   m_SizeDelta: {x: -2.5700002, y: -1.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68402602
@@ -1909,6 +1909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 243891190}
     m_Modifications:
+    - target: {fileID: 4735556846931346934, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Course01
+      objectReference: {fileID: 0}
     - target: {fileID: 169687829, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
       propertyPath: m_Material
       value: 
@@ -1941,11 +1946,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Convex
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4735556846931346934, guid: 7ba10178bd0432f479ca236350b393a4,
-        type: 3}
-      propertyPath: m_Name
-      value: Course01
       objectReference: {fileID: 0}
     - target: {fileID: 4735556846931346935, guid: 7ba10178bd0432f479ca236350b393a4,
         type: 3}
@@ -2016,6 +2016,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855476, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855476, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855476, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855475, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: dragValue
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855475, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: dragRange.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092184734611855475, guid: 7ba10178bd0432f479ca236350b393a4,
+        type: 3}
+      propertyPath: dragRange.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5041130358168233360, guid: 7ba10178bd0432f479ca236350b393a4, type: 3}
