@@ -13,6 +13,11 @@ public class Ball : MonoBehaviour
     private CameraTransitionManager camTransManager;
     [SerializeField] private float reappearGroundOffset;
     [Range (0,1)] [SerializeField] private float shrinkerValue;
+    [SerializeField] private Vector2 dragRange = new Vector2(0.3f,1f);
+    [SerializeField] private float minVelocityToDrag = 0.1f;
+    private float groundCheckDistance = 0.01f;
+    [SerializeField] private float airDragValue = 0.3f;
+    public float InitialForce { get; set; }
 
     private Vector3 lastFrameVelocity;
     [SerializeField] private float minVelocity;
@@ -20,10 +25,7 @@ public class Ball : MonoBehaviour
     private bool dissapearing;
     public bool Dissapearing
     {
-        get
-        {
-            return dissapearing;
-        }
+        get => dissapearing;
         private set
         {
             dissapearing = value;
@@ -31,8 +33,8 @@ public class Ball : MonoBehaviour
         }
     }
 
- 
-
+    private bool IsGrounded => Physics.Raycast(transform.position, -Vector3.up, groundCheckDistance + 0.1f);
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +48,7 @@ public class Ball : MonoBehaviour
         rb.maxAngularVelocity = Mathf.Infinity;
         camTransManager = FindObjectOfType<CameraTransitionManager>();
         SetKnownGoodPosition(transform.position);
+        groundCheckDistance = GetComponent<SphereCollider>().bounds.extents.y;
     }
 
     
@@ -78,12 +81,20 @@ public class Ball : MonoBehaviour
         Dissapearing = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        lastFrameVelocity = rb.velocity;   
+        lastFrameVelocity = rb.velocity;
+        if (IsGrounded && rb.velocity.magnitude > minVelocityToDrag)
+        {
+            GroundDrag();
+        }
+
+        if (!IsGrounded)
+        {
+            AirDrag();
+        }
     }
-
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
@@ -91,7 +102,7 @@ public class Ball : MonoBehaviour
             Bounce(collision.contacts[0].normal);
         }
     }
-
+    
     private void Bounce(Vector3 collisionNormal)
     {
         var speed = lastFrameVelocity.magnitude;
@@ -104,4 +115,16 @@ public class Ball : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
     }
+
+        private void GroundDrag()
+        {
+            var t = Mathf.InverseLerp(rb.sleepThreshold, InitialForce, rb.velocity.magnitude);
+            var currentDrag = Mathf.Lerp(dragRange.x, dragRange.y , 1 - t);
+            rb.velocity -= (currentDrag * Time.fixedDeltaTime) * rb.velocity;
+        }
+
+        private void AirDrag()
+        {
+            rb.velocity -= (airDragValue * Time.fixedDeltaTime) * rb.velocity;
+        }
 }

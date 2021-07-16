@@ -161,6 +161,7 @@ public class StrokeManager : MonoBehaviour
     {
         Vector3 forceVec = StrokeForce * Vector3.forward + StrokeForce * Vector3.up * currentGolfClub.VerticalFactorStrength;
         playerBallRB.AddForce(Quaternion.Euler(0, StrokeAngle, 0) * forceVec, ForceMode.Impulse);
+        ball.InitialForce = forceVec.magnitude;
         StrokeForce = 0;
         StrokeCount++;
         audioSrc.clip = currentGolfClub.hitSound;
