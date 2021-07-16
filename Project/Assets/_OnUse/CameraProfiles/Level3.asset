@@ -93,12 +93,12 @@ MonoBehaviour:
     value: 1
   _StepLevel:
     overrideState: 1
-    value: 0.26
+    value: 0.19
   _GrayBlackBalance:
     overrideState: 1
-    value: 0.48
+    value: 0.39
   _Tint:
-    overrideState: 1
+    overrideState: 0
     value: {r: 0.106075056, g: 0.023584902, b: 1, a: 0}
 --- !u!114 &11400000
 MonoBehaviour:

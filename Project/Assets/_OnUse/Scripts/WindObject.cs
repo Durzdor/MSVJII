@@ -109,6 +109,6 @@ public class WindObject : MonoBehaviour
     //Separate impulse code
     private void OnTriggerEnter(Collider other)
     {
-        other.attachedRigidbody.AddForce(WindDirection.y * Vector3.up * windForceToUpDirection, ForceMode.Impulse);
+        other.attachedRigidbody.AddForce(WindDirection * windForceToUpDirection, ForceMode.Impulse);
     }
 }
