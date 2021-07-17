@@ -24,8 +24,8 @@ TagManager:
   - TriggerAreas
   - Obstacle
   - Floor
-  - 
-  - 
+  - PostProcessTrigger
+  - Shark
   - 
   - 
   - 

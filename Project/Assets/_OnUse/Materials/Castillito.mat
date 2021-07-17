@@ -28,14 +28,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _1: 2
-    - _FresnelPower: 5
+    - _1: 1.06
+    - _FresnelPower: 3.91
     - _FresnelScale: 1
-    - _NormalMapIntensity: 0.1
-    - _ScaleTime: 0.05
+    - _NormalMapIntensity: 0.08
+    - _ScaleTime: 0.01
     - __dirty: 0
     m_Colors:
-    - _CastleTint: {r: 0.49474904, g: 0.9622642, b: 0.8040761, a: 0}
+    - _CastleTint: {r: 1, g: 1, b: 1, a: 0}
     - _DepthFadeColor: {r: 1, g: 0.62663674, b: 0, a: 0}
     - _FresnelColor: {r: 0, g: 1.5450981, b: 0.5254902, a: 0}
     - _Tiling: {r: 0.37, g: 1.71, b: 0, a: 0}
