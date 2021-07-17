@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FactoryBallShader
+  m_Name: InerteBarraDePlutonio
   m_Shader: {fileID: 4800000, guid: 498ee9cc724aa754aad4aa2e6f759fd3, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _DeformationIntensity: 0.008
+    - _DeformationIntensity: 0.17
     - _InterLine: 0.05
     - _MaskXStripesAmount: 59.21
     - _Metallic: 1
@@ -47,7 +47,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 1.098039, g: 0, b: 0.1647059, a: 0}
-    - _EmissionColor: {r: 0, g: 26.614216, b: 13.390701, a: 0}
-    - _PanDirection: {r: 0.2, g: 0.2, b: 0, a: 0}
-    - _SecondaryEmissionColor: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 0}
+    - _EmissionColor: {r: 0, g: 7.465693, b: 0.17566337, a: 0}
+    - _PanDirection: {r: 5.42, g: 2.52, b: 0, a: 0}
+    - _SecondaryEmissionColor: {r: 0, g: 0.3764706, b: 0.0218934, a: 0}
     - _TextureTiling: {r: 0.5, g: 0.5, b: 0, a: 0}

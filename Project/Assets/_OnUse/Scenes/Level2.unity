@@ -999,8 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e590e091da6d96f4db9bf36577866515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 2
-  totalLevels: 6
+  currentLevel: 1
+  totalLevels: 7
   levelNames:
   - MainMenu
   - Level1
@@ -1008,6 +1008,7 @@ MonoBehaviour:
   - Level3
   - Level4
   - Level5
+  - WinScene
 --- !u!114 &756581647
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -84,14 +84,14 @@ Material:
     - __dirty: 0
     m_Colors:
     - _BigNormalSpeed: {r: 0.1, g: -0.08, b: 0, a: 0}
-    - _CrestColor: {r: 0.36320725, g: 0.8106835, b: 1, a: 0}
+    - _CrestColor: {r: 0.36320722, g: 0.8106835, b: 1, a: 0}
     - _Direction: {r: 0.48, g: 0, b: -0.21, a: 0}
     - _Direction1: {r: 0.34, g: 0, b: 0.27, a: 0}
     - _Direction2: {r: -0.06, g: 0, b: -0.61, a: 0}
     - _Direction3: {r: 0.24, g: 0, b: 0.09, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
     - _FoamMoveDirection: {r: 0.5, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0, g: 0.107090615, b: 0.16037714, a: 0}
+    - _MainColor: {r: 0, g: 0.107090585, b: 0.16037712, a: 0}
     - _MainDirection: {r: 0, g: 0, b: 0, a: 0}
     - _SmallNormalSpeed: {r: 0.11, g: -0.03, b: 0, a: 0}
     - _Vector0: {r: 0.3, g: 0.1, b: 0, a: 0}
