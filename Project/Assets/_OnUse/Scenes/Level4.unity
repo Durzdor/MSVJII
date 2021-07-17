@@ -513,6 +513,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &570734694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1097879893643070763, guid: e5374f72e88589045844a529c76d79fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 2086482714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &570734699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570734694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1e2b4e006452c43af3678f1e8914b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationalSpeedDelta: 5
+  minRotationalSpeed: 2
+  maxRotationalSpeed: 20
+  doesChangeSpeed: 1
+  waitToDestroy: 0
+--- !u!54 &570734700
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570734694}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &679064068
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,6 +651,8 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   - assemblyQualifiedName: PixelatePPSSettings, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  - assemblyQualifiedName: UnderwaterPPSSettings, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &679064071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,8 +679,8 @@ Camera:
   m_GameObject: {fileID: 679064068}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1074,6 +1115,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8540708106300632972, guid: e5374f72e88589045844a529c76d79fe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f710fe9ea09b4e6429aee8b20d17ab2c, type: 2}
     m_RemovedComponents:
     - {fileID: 1730155658166910059, guid: e5374f72e88589045844a529c76d79fe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e5374f72e88589045844a529c76d79fe, type: 3}

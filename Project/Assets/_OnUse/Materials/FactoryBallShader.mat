@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FactoryBallShader
+  m_Shader: {fileID: 4800000, guid: 498ee9cc724aa754aad4aa2e6f759fd3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 5c5dc6d07550a7248b40407bbd127600, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 1f85e721d83bf9d46a23456a6584a3dd, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 2800000, guid: 5c5dc6d07550a7248b40407bbd127600, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DeformationIntensity: 0.008
+    - _InterLine: 0.049
+    - _MaskXStripesAmount: 90.54
+    - _Metallic: 1
+    - _Smoothness: 1
+    - _Step: 0.056
+    - _TilingSpeed: 0.1
+    - _VariationTime: 7
+    - __dirty: 0
+    m_Colors:
+    - _Color0: {r: 1.098039, g: 0, b: 0.1647059, a: 0}
+    - _EmissionColor: {r: 0.6756883, g: 1.5592808, b: 9.927421, a: 0}
+    - _PanDirection: {r: 0.2, g: 0.2, b: 0.1, a: 0}
+    - _TextureTiling: {r: 0.5, g: 0.5, b: 0, a: 0}

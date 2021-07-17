@@ -21,8 +21,8 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _DepthFadeDistance: 0.07
-    - _LineAmount: 96.59
-    - _LineMoveSpeed: 13.2
+    - _LineAmount: 207.7
+    - _LineMoveSpeed: 5
     - _TopMaskFalloff: 4.77
     - _TopMaskIntensity: 4.16
     - __dirty: 0
@@ -30,4 +30,4 @@ Material:
     - _Color0: {r: 0.32987696, g: 0, b: 0, a: 0}
     - _DepthFadeColor: {r: 0.2924528, g: 0, b: 0.25804657, a: 0}
     - _DetailEmissionTint: {r: 0, g: 1, b: 0.8982549, a: 0}
-    - _EmissionTint: {r: 0, g: 0.1167646, b: 1.4952986, a: 0}
+    - _EmissionTint: {r: 0.033853, g: 0, b: 0.9981706, a: 0}
