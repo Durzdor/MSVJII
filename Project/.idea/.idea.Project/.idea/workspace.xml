@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="035692a5-721d-4d4f-b326-f440d1e6ef6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Textures/BeachTextures/New Folder/WavesBigSection.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Textures/BeachTextures/New Folder/WavesBigSection.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/WinScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/WinScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +20,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StrokeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/StrokeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Ball.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tUedYqA3gV3tbwCiC9UK020LKR" />
