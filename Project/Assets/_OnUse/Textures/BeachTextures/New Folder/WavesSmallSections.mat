@@ -54,6 +54,7 @@ Material:
     - _BigNormalTiling: 0.93
     - _CrestVariation: 32.47
     - _CrestVariation1: 5.55
+    - _DepthFadeColorIntensity: 0
     - _DepthFadeDistance: 0.69
     - _EdgeLength: 2
     - _FakeNormalOffset: 0

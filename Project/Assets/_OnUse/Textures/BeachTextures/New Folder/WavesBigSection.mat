@@ -54,18 +54,19 @@ Material:
     - _BigNormalTiling: 3.8
     - _CrestVariation: 32.47
     - _CrestVariation1: 5.55
-    - _DepthFadeDistance: 0.87
+    - _DepthFadeColorIntensity: 0.199
+    - _DepthFadeDistance: 0.52
     - _EdgeLength: 2
     - _FakeNormalOffset: 0
     - _FakeNormalTransformation: 1
     - _Float0: 5.6
-    - _FoamIntesnity: 1
-    - _FoamMask: 4.55
-    - _FoamMaskFalloff: 2.24
-    - _FoamMaskHardness: 2.42
-    - _FoamMoveSpeed: 1
-    - _FoamScale: 1.99
-    - _FoamTopLayerMaskFalloff: 2.27
+    - _FoamIntesnity: 0.251
+    - _FoamMask: 4.96
+    - _FoamMaskFalloff: 4
+    - _FoamMaskHardness: 1.14
+    - _FoamMoveSpeed: 0.37
+    - _FoamScale: 3
+    - _FoamTopLayerMaskFalloff: 1
     - _FresnelBias: 0.615
     - _FresnelPower: 4.58
     - _FresnelScale: 2.37
@@ -83,14 +84,14 @@ Material:
     - __dirty: 0
     m_Colors:
     - _BigNormalSpeed: {r: 0.1, g: -0.08, b: 0, a: 0}
-    - _CrestColor: {r: 0.36320734, g: 0.8106835, b: 1, a: 0}
+    - _CrestColor: {r: 0.36320725, g: 0.8106835, b: 1, a: 0}
     - _Direction: {r: 0.48, g: 0, b: -0.21, a: 0}
     - _Direction1: {r: 0.34, g: 0, b: 0.27, a: 0}
     - _Direction2: {r: -0.06, g: 0, b: -0.61, a: 0}
     - _Direction3: {r: 0.24, g: 0, b: 0.09, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
-    - _FoamMoveDirection: {r: 0.1, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0, g: 0.10709072, b: 0.16037723, a: 0}
+    - _FoamMoveDirection: {r: 0.5, g: 0, b: 0, a: 0}
+    - _MainColor: {r: 0, g: 0.107090615, b: 0.16037714, a: 0}
     - _MainDirection: {r: 0, g: 0, b: 0, a: 0}
     - _SmallNormalSpeed: {r: 0.11, g: -0.03, b: 0, a: 0}
     - _Vector0: {r: 0.3, g: 0.1, b: 0, a: 0}
