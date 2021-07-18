@@ -22,7 +22,7 @@ public class Ball : MonoBehaviour
     private float groundCheckDistance = 0.01f;
     [SerializeField] private float airDragValue = 0.3f;
     public float InitialForce { get; set; }
-    private bool IsGrounded => Physics.Raycast(transform.position, -Vector3.up, groundCheckDistance + 0.1f);
+    public bool IsGrounded => Physics.Raycast(transform.position, -Vector3.up, groundCheckDistance + 0.1f);
 
     private bool dissapearing;
 

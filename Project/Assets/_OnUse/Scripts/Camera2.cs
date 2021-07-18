@@ -16,6 +16,7 @@ public class Camera2 : MonoBehaviour {
     [SerializeField] private float distanceMax = 15f;
 
     [SerializeField] private GameObject aerealCamera;
+    [SerializeField] private LayerMask mask;
  
     private Rigidbody _rb;
     private Vector3 _cameraOffset;
@@ -69,7 +70,7 @@ public class Camera2 : MonoBehaviour {
  
             
             RaycastHit hit;
-            if (Physics.Linecast (target.position, transform.position, out hit)) 
+            if (Physics.Linecast (target.position, transform.position, out hit, mask)) 
             {
                 distance -=  hit.distance;
             }

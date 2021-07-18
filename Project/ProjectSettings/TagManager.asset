@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - 3DArrow
   - UI
+  - StickySurface
   layers:
   - Default
   - TransparentFX

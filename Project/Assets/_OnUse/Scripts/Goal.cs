@@ -5,17 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
-
-   
-
+    [SerializeField] private bool isFloatingGoal;
     [SerializeField] private float timeToWinStart;
+
     public delegate void Win();
+
     public Win OnWin;
     private SphereCollider sphereColl;
     public AudioSource winMusic;
 
     private float timeToWin;
-
 
     private void Start()
     {
@@ -30,6 +29,14 @@ public class Goal : MonoBehaviour
         timeToWin = timeToWinStart;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!isFloatingGoal) return;
+        if (other.CompareTag("Player"))
+        {
+            TriggerWin();
+        }
+    }
 
     private void OnTriggerStay(Collider other)
     {
@@ -42,7 +49,7 @@ public class Goal : MonoBehaviour
             {
                 TriggerWin();
             }
-        }    
+        }
     }
 
     private void TriggerWin()
@@ -51,10 +58,8 @@ public class Goal : MonoBehaviour
         OnWin?.Invoke();
     }
 
-
     private void OnTriggerExit(Collider other)
     {
         ResetTimer();
     }
-
 }
