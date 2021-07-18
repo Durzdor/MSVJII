@@ -28,6 +28,6 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 0.32987696, g: 0, b: 0, a: 0}
-    - _DepthFadeColor: {r: 0.2924528, g: 0, b: 0.25804657, a: 0}
-    - _DetailEmissionTint: {r: 0, g: 1, b: 0.8982549, a: 0}
-    - _EmissionTint: {r: 0.033853, g: 0, b: 0.9981706, a: 0}
+    - _DepthFadeColor: {r: 0.9245283, g: 0.02180491, b: 0.81620157, a: 0}
+    - _DetailEmissionTint: {r: 1, g: 0.72182995, b: 0, a: 0}
+    - _EmissionTint: {r: 1, g: 0.057804264, b: 0, a: 0}

@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 4
-  totalLevels: 6
+  totalLevels: 7
   levelNames:
   - MainMenu
   - Level1
@@ -344,6 +344,7 @@ MonoBehaviour:
   - Level3
   - Level4
   - Level5
+  - WinScene
 --- !u!114 &269622676
 MonoBehaviour:
   m_ObjectHideFlags: 0

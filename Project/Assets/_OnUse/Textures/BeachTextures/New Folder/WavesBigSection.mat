@@ -49,9 +49,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Amplitude: 0.11
-    - _AmplitudeDivider: 10.4
-    - _BigNormalIntensity: 1
-    - _BigNormalTiling: 3.8
+    - _AmplitudeDivider: 6.76
+    - _BigNormalIntensity: 0.58
+    - _BigNormalTiling: 5
     - _CrestVariation: 32.47
     - _CrestVariation1: 5.55
     - _DepthFadeColorIntensity: 0.199
@@ -70,16 +70,16 @@ Material:
     - _FresnelBias: 0.615
     - _FresnelPower: 4.58
     - _FresnelScale: 2.37
-    - _NumberOfWaves: 10
-    - _SmallNormalIntensity: 1
-    - _SmallNormalTiling: 4.9
-    - _Smoothness: 0.072
+    - _NumberOfWaves: 126.08
+    - _SmallNormalIntensity: 0.83
+    - _SmallNormalTiling: 6
+    - _Smoothness: 0.18
     - _SpecularIntensity: 0.206
     - _Steepness: 0
     - _WaveAttenuation: 2
-    - _WaveLengthMultiplier: 11
-    - _WaveSpeedMultiplier: 7.8
-    - _Wavelenght: 50
+    - _WaveLengthMultiplier: 62
+    - _WaveSpeedMultiplier: 8
+    - _Wavelenght: 80
     - _Wavespeed: 18.7
     - __dirty: 0
     m_Colors:
