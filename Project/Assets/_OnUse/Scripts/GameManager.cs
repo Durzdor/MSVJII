@@ -43,12 +43,14 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0;
+        isPaused = true;
         //activate pause canvas
     }
 
     public void Unpause()
     {
         Time.timeScale = 1;
+        isPaused = false;
         //deactivate pause canvas
     }
 

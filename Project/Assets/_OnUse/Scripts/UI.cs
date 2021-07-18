@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UI : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject scoreSheet;
     private AudioSource scoreSheetAudioSrc;
 
-    [SerializeField] private Text [] levelScoresText;
+    [SerializeField] private TextMeshProUGUI [] levelScoresText;
 
     private void Start()
     {
@@ -51,8 +52,10 @@ public class UI : MonoBehaviour
     public void EnableDisableScoreSheet(bool newState)
     {
         scoreSheet.SetActive(newState);
+
         if (newState) GameManager.instance.Pause();
         else GameManager.instance.Unpause();        
+
         if (newState) scoreSheetAudioSrc.Play();
     }
    

@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: 494f9fa7b2d0f0c4188496f634e90ead
+guid: e587d0c60d2e7574393e0bfc9c7dbef6
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: 1827226128182048838
-    second: Take 001
+      74: -203655887218126122
+    second: mixamo.com
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 14 - Default
-    second: {fileID: 2100000, guid: 082fd7aa1378f5940a5f2f0b13807b70, type: 2}
+      name: No Name
+    second: {fileID: 2100000, guid: 15a1c2eeddad35e46b48fd2ff500012a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -40,11 +40,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
+      name: mixamo.com
+      takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 35
+      lastFrame: 54
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
