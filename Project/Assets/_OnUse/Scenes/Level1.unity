@@ -27028,15 +27028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptimizedTree (43)
       objectReference: {fileID: 0}
-    - target: {fileID: 4626611744109999126, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.8
+      value: 9.6
       objectReference: {fileID: 0}
     - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
         type: 3}
@@ -27046,7 +27041,7 @@ PrefabInstance:
     - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.3
+      value: -51.3
       objectReference: {fileID: 0}
     - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
         type: 3}
@@ -27087,31 +27082,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 5156287500810642810, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4102916447196151700, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 186ad8f063dbf430da4d56ebc0cb14e0, type: 3}
-    - target: {fileID: 1128332299055283077, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1128332299055283077, guid: 5f4fa5565cdf6ff4f88cc18a65bc11f5,
         type: 3}
