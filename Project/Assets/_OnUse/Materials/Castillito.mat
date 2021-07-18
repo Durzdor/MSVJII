@@ -29,6 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _1: 1.06
+    - _DepthFadeDistance: 0.25
     - _FresnelPower: 3.91
     - _FresnelScale: 1
     - _NormalMapIntensity: 0.08
