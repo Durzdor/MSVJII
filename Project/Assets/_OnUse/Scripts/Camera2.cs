@@ -90,15 +90,15 @@ public class Camera2 : MonoBehaviour {
 
     private void CheckChangeToAerealCamera()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            aerealCamera.SetActive(true);
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            aerealCamera.SetActive(false);
-        }
+        // if (Input.GetKeyDown(KeyCode.LeftShift))
+        // {
+        //     aerealCamera.SetActive(true);
+        // }
+        //
+        // if (Input.GetKeyUp(KeyCode.LeftShift))
+        // {
+        //     aerealCamera.SetActive(false);
+        // }
     }
     public static float ClampAngle(float angle, float min, float max)
     {
