@@ -46,7 +46,7 @@ Material:
     - _Float1: 0.53
     - _LavaMoveScale: 0.15
     - _LavaSpotsFalloff: 1.25
-    - _NoiseScale: 10.66
+    - _NoiseScale: 54.98
     - _OriginalColorIntensity: 0
     - _Smoothness: 0.86
     - _TimeScale: 1
@@ -56,7 +56,7 @@ Material:
     - _TransScattering: 2
     - _TransShadow: 0.9
     - _Translucency: 1
-    - _WaveIntensity: 0.28
+    - _WaveIntensity: 0.01
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 0.6698113, g: 0.16113384, b: 0.16113384, a: 0}

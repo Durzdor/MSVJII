@@ -15826,7 +15826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxAngleDeflection: 25
-  SpeedOfPendulum: 0.05
+  SpeedOfPendulum: 0.08
   deformationAmount: 0
   pivotingAxis: 1
 --- !u!1 &5806694693616913739
