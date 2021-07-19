@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OutOfBounds : MonoBehaviour
+public class Level5OutofBounds : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

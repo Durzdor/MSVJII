@@ -1,82 +1,36 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RotateBlades : MonoBehaviour
 {
-    private float rotationalSpeed;
     [SerializeField] private float rotationalSpeedDelta;
-    [SerializeField] private float minRotationalSpeed;
-    [SerializeField] private float maxRotationalSpeed;
-    [SerializeField] private bool doesChangeSpeed;
-    private bool isGoingSlow;
-    private Rigidbody rb;
-    [SerializeField] private float waitToDestroy;
-
-    // Start is called before the first frame update
-    void Start()
+    public enum RotationVector
     {
-        rb = GetComponent<Rigidbody>();
-        rotationalSpeed = maxRotationalSpeed;
-        isGoingSlow = false;
-    }
+        Vector3Up,
+        Vector3Forward,
+        Vector3Right,
+    };
 
-    private void ChangeSpeed()
-    {
-        if (isGoingSlow)
-        {
-            rotationalSpeed += rotationalSpeedDelta * Time.deltaTime;
-
-            if (rotationalSpeed >= maxRotationalSpeed)
-            {
-                isGoingSlow = false;
-            }
-            return;
-        }
-
-        rotationalSpeed -= rotationalSpeedDelta * Time.deltaTime;
-
-        if (rotationalSpeed <= minRotationalSpeed)
-        {
-            isGoingSlow = true;
-        }
-    }
+    [Tooltip("A que direccion apunta al principio")]
+    public RotationVector desiredRotation = RotationVector.Vector3Forward;
 
     private void FixedUpdate()
     {
-        if (doesChangeSpeed)
+        switch (desiredRotation)
         {
-            ChangeSpeed();
-            print($"rotational speed is {rotationalSpeed}");
+            case RotationVector.Vector3Up:
+                transform.Rotate(Vector3.up,rotationalSpeedDelta);
+                break;
+            case RotationVector.Vector3Forward:
+                transform.Rotate(Vector3.forward,rotationalSpeedDelta);
+                break;
+            case RotationVector.Vector3Right:
+                transform.Rotate(Vector3.right,rotationalSpeedDelta);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
         }
-
-        rb.AddTorque(transform.forward * rotationalSpeed * Time.fixedDeltaTime);
     }
-
-    //Experimental, delete if needeed.
-
-    /*
-    private void OnJointBreak(float breakForce)
-    {
-        //Play destroy sound, if any.        
-        StartCoroutine(DestroyWindmillBlades());
-    }
-
-    private IEnumerator DestroyWindmillBlades()
-    {
-        doesChangeSpeed = false;
-        rotationalSpeed = 0;
-
-        for (int i = 0; i < 10; i++)
-        {
-            transform.localScale *= 0.9f;
-            yield return new WaitForSecondsRealtime(0.2f);
-        }
-
-        yield return new WaitForSecondsRealtime(waitToDestroy);
-
-
-        Destroy(gameObject);
-    }*/
-
 }

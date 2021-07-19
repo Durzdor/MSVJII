@@ -154,7 +154,12 @@ public class StrokeManager : MonoBehaviour
         switch (StrokeMode)
         {
             case StrokeState.Aiming:
-
+                if (playerBallRB.velocity.magnitude > 5)
+                {
+                    ChangeState(StrokeState.Move);
+                    EnableArrow(false);
+                    return;
+                }
                 if (StrokeCount >= maxStrokes)
                 {
                     OnMaxStrokesReached?.Invoke();
@@ -215,7 +220,6 @@ public class StrokeManager : MonoBehaviour
 
                 break;
             case StrokeState.Hit:
-
                 break;
 
             case StrokeState.Move:
@@ -236,7 +240,10 @@ public class StrokeManager : MonoBehaviour
     {
         if (playerBallRB.IsSleeping())
         {
-            ball.SetKnownGoodPosition(ball.transform.position);
+            if (ball.IsGrounded)
+            {
+                ball.SetKnownGoodPosition(ball.transform.position);
+            }
             ChangeState(StrokeState.Aiming);
         }
     }
