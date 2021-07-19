@@ -16,6 +16,8 @@ public class Goal : MonoBehaviour
     public bool audioIsPlaying => winMusic.isPlaying;
     private float timeToWin;
 
+    [SerializeField] private ParticleSystem[] partSys;
+
     private void Start()
     {
         winMusic = GetComponent<AudioSource>();
@@ -61,6 +63,14 @@ public class Goal : MonoBehaviour
         go.GetComponent<AudioSource>().Stop();
         sphereColl.enabled = false;
         winMusic.Play();
+        if (partSys.Length > 0)
+        {
+            for (int i = 0; i < partSys.Length; i++)
+            {
+                partSys[i].Play();
+            }
+        }
+       
 
         while (winMusic.isPlaying)
         {
