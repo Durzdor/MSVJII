@@ -18,6 +18,7 @@ public class BackToMenuScene : MonoBehaviour
 
     public void ButtonPress()
     {
+        GameManager.instance.lvlManager.ResetScores();
         GameManager.instance.LoadScene("MainMenu");
     }
 

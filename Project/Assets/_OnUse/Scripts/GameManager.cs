@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
    
         lvlManager.OnNextLevel += OnNextLevelHandler;
     }
+    
+
     public void StrokeManagerRef(StrokeManager strokeManagerReference)
     {
         strokeManager = strokeManagerReference;

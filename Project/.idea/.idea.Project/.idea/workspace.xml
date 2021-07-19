@@ -3,39 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="035692a5-721d-4d4f-b326-f440d1e6ef6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/Built-In Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/HDRP Samples (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/HDRP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/LWRP Samples (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/LWRP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/Sample Resources.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples/URP Samples.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/CustomRTTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/HDSRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/LWSRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/PPStackTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 3xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 4xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 572 (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 5xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 6xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/HDSRPTemplates 7xx - 9xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/LWSRPTemplates 3xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/LWSRPTemplates 4xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy)/USRPTemplates 7xx - 9xx (Legacy).unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/USRPTemplates.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/Music.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Audio/Temp.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level2_Profiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Examples.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP (Legacy).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Darth_Artisan.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/AmplifyShaderEditor/Plugins/EditorResources/ShaderFunctions.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/AmplifyShaderEditor/Plugins/EditorResources/ShaderFunctions.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Audio/Music.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level3.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Camera2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Camera2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/OutOfBounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/OutOfBounds.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/RotateBlades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/RotateBlades.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/StrokeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/StrokeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level5.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level5.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level6.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scenes/Level6.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_OnUse/Scripts/MainMenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_OnUse/Scripts/MainMenuManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +40,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_OnUse/Scripts/StickyBall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_OnUse/Scripts/TimedPlatform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_OnUse/Scripts/StickyBall.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/StrokeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/SharkBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Pendulum.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Camera2.cs" />
@@ -74,6 +58,10 @@
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/StrokeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/RotateBlades.cs" />
       <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/Goal.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/BackToMenuScene.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/_OnUse/Scripts/LevelManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tUedYqA3gV3tbwCiC9UK020LKR" />
@@ -141,6 +129,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

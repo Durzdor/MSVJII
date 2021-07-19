@@ -6,9 +6,7 @@ public class LevelManager: MonoBehaviour
 {
 
     [SerializeField] private int currentLevel;
-    [SerializeField] private int totalLevels;
     [SerializeField] private string[] levelNames;
-    private int playableLevels;
     private int[] levelScores;
 
     public delegate void NextLevel(string levelToLoad);
@@ -19,19 +17,27 @@ public class LevelManager: MonoBehaviour
 
     private void Awake()
     {
-        // Restar la cantidad de niveles que no son jugables (MainMenu,WinScene)
-        playableLevels = totalLevels - 2;
-        levelScores = new int[playableLevels];
-        for (int i = 0; i < playableLevels; i++)
+        levelScores = new int[levelNames.Length];
+        ResetScores();
+    }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            LevelScores[i] = -1;
+            OnWonLevelHandler();
         }
     }
 
     public void ToNextLevel()
     {
         currentLevel++;
-        if (currentLevel > totalLevels) currentLevel = 0;
+        if (currentLevel > levelNames.Length - 1)
+        {
+            currentLevel = 0; 
+            GameManager.instance.LoadScene("WinScene");
+            return;
+        }
         StartALevel();      
     }
     
@@ -43,12 +49,12 @@ public class LevelManager: MonoBehaviour
 
     public void SetScoreForLevel(int level, int score)
     {
-        LevelScores[level - 1] = score;
+        levelScores[level] = score;
     }
 
     public int[] RecallScores()
     {
-        return LevelScores;
+        return levelScores;
     }
 
     public void OnWonLevelHandler()
@@ -58,7 +64,11 @@ public class LevelManager: MonoBehaviour
         ToNextLevel();
     }
 
-
-
-
+    public void ResetScores()
+    {
+        for (int i = 0; i < levelNames.Length; i++)
+        {
+            levelScores[i] = -1;
+        }
+    }
 }
