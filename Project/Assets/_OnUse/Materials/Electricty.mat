@@ -32,11 +32,11 @@ Material:
     - _ElectricScale: 5
     - _ElectricScale1: 5
     - _ElectricScale2: 5
-    - _ElectricityBoltWidth: 0.22
+    - _ElectricityBoltWidth: 0.29
     - _ElectricitySpeed: 0.1
     - _ElectricitySpeed1: 1
     - _ElectricitySpeed2: 0.1
-    - _ElectrictyBoltWidth2: 0.27
+    - _ElectrictyBoltWidth2: 0.34
     - _ElecttrictyPower: 2.7
     - _FresnelPower: 32.7
     - _FresnelScale: 1
@@ -47,6 +47,6 @@ Material:
     - _ElectricityDir1: {r: 0, g: 1, b: 0, a: 0}
     - _ElectricityDir2: {r: 0, g: -1, b: 0, a: 0}
     - _FresnelColor: {r: 1, g: 0.49824244, b: 0, a: 0}
-    - _LightningColor: {r: 1.9843137, g: 1.2862746, b: 0, a: 0}
+    - _LightningColor: {r: 1.2496295, g: 0.38314113, b: 0.52168036, a: 0}
     - _RaysColor: {r: 1.6152706, g: 0, b: 4, a: 0}
-    - _SecondaryEmissionColor: {r: 0.96387255, g: 0, b: 0.3106046, a: 0}
+    - _SecondaryEmissionColor: {r: 0.9433962, g: 0.7268494, b: 0.35154858, a: 0}
