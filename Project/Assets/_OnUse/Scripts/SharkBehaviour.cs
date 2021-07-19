@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+ 
 public class SharkBehaviour : MonoBehaviour
 {
     [SerializeField] private Transform[] sharkPatrolPoints;
@@ -55,7 +56,7 @@ public class SharkBehaviour : MonoBehaviour
     {
         var nextPoint = sharkPatrolPoints[nextWaypoint];
         var nextPointPosition = nextPoint.position;
-        var nextPointDirection = nextPoint.position - transform.position;
+        var nextPointDirection = nextPointPosition - transform.position;
         if (nextPointDirection.magnitude < distance)
         {
             if (nextWaypoint + waypointModifier >= sharkPatrolPoints.Length || nextWaypoint + waypointModifier < 0)

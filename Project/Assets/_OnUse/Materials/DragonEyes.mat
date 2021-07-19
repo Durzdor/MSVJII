@@ -21,7 +21,7 @@ Material:
     m_TexEnvs:
     - _Dragoneyeteexture:
         m_Texture: {fileID: 2800000, guid: 1e0fbf6a82f186446b7b4db0b0f8da81, type: 3}
-        m_Scale: {x: -2.91, y: 1}
+        m_Scale: {x: 0.69, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
         m_Texture: {fileID: 2800000, guid: 1e0fbf6a82f186446b7b4db0b0f8da81, type: 3}
@@ -34,4 +34,4 @@ Material:
     m_Floats:
     - __dirty: 0
     m_Colors:
-    - _EmissionColor: {r: 1, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 42.722507, g: 15.74869, b: 0, a: 0}
