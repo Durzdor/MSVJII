@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _DeformationIntensity: 1.73
+    - _DeformationIntensity: 2
     - _DeformationMaskFallOff: 0.95
     - _DeformationMaskIntensity: 0
     - _DeformationScale: 1.31
@@ -32,11 +32,11 @@ Material:
     - _ElectricScale: 5
     - _ElectricScale1: 5
     - _ElectricScale2: 5
-    - _ElectricityBoltWidth: 0.31
+    - _ElectricityBoltWidth: 0.26
     - _ElectricitySpeed: 0.1
     - _ElectricitySpeed1: 1
     - _ElectricitySpeed2: 0.1
-    - _ElectrictyBoltWidth2: 0.38
+    - _ElectrictyBoltWidth2: 0.4
     - _ElecttrictyPower: 2.7
     - _FresnelPower: 32.7
     - _FresnelScale: 1
