@@ -18,9 +18,11 @@ public class PneumaticValve : MonoBehaviour
     [SerializeField] private float maxPower, minPower, maxScale, minScale;
 
     private AudioSource audioSrc;
+    [SerializeField] private ParticleSystem particleSys;
 
     void Start()
     {
+        
         mat = GetComponent<MeshRenderer>().material;     
         fresnelScaleID = Shader.PropertyToID("_FresnelScale");
         fresnelPowerID = Shader.PropertyToID("_FresnelPower");
@@ -46,6 +48,7 @@ public class PneumaticValve : MonoBehaviour
             {
                 _timeToStopBlowing = timeToStopBlowing;
                 audioSrc.Play();
+                particleSys.Play();
                 isBlowing = false;
             }
             return;

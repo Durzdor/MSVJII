@@ -41,4 +41,4 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 1.0039216, g: 0.03137255, b: 0, a: 0}
-    - _HotChainsColor: {r: 1.0039216, g: 0.03137255, b: 0, a: 0}
+    - _HotChainsColor: {r: 2.0078435, g: 0.06307361, b: 0, a: 0}
