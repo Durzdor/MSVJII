@@ -11,6 +11,7 @@ TagManager:
   - 3DArrow
   - UI
   - StickySurface
+  - BackgroundMusi
   layers:
   - Default
   - TransparentFX

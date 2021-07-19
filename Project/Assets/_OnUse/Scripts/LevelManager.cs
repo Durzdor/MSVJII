@@ -60,9 +60,12 @@ public class LevelManager: MonoBehaviour
     public void OnWonLevelHandler()
     {     
         SetScoreForLevel(currentLevel, GameManager.instance.strokeManager.StrokeCount);
-        GameManager.instance.uiReference.UpdateScores();
+        GameManager.instance.uiReference.UpdateScores();      
+
         ToNextLevel();
     }
+
+    
 
     public void ResetScores()
     {

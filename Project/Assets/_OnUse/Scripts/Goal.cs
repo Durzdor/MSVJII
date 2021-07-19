@@ -12,12 +12,13 @@ public class Goal : MonoBehaviour
 
     public Win OnWin;
     private SphereCollider sphereColl;
-    public AudioSource winMusic;
-
+    private AudioSource winMusic;
+    public bool audioIsPlaying => winMusic.isPlaying;
     private float timeToWin;
 
     private void Start()
     {
+        winMusic = GetComponent<AudioSource>();
         ResetTimer();
         sphereColl = GetComponent<SphereCollider>();
         GameManager.instance.GoalReference(this);
@@ -47,11 +48,29 @@ public class Goal : MonoBehaviour
 
             if (timeToWin <= 0)
             {
-                TriggerWin();
+                StartCoroutine(ToWin());               
+             
             }
         }
     }
 
+    private IEnumerator ToWin()
+    {
+        GameObject go = GameObject.FindGameObjectWithTag("BackgroundMusi");
+
+        go.GetComponent<AudioSource>().Stop();
+        sphereColl.enabled = false;
+        winMusic.Play();
+
+        while (winMusic.isPlaying)
+        {
+            yield return new WaitForSecondsRealtime(0.2f);
+        }
+
+     
+
+        OnWin?.Invoke();
+    }
     private void TriggerWin()
     {
         sphereColl.enabled = false;
