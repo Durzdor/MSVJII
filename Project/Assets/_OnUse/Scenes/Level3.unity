@@ -21374,7 +21374,7 @@ PrefabInstance:
     - target: {fileID: 7978802703352799685, guid: e5374f72e88589045844a529c76d79fe,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7978802703832038586, guid: e5374f72e88589045844a529c76d79fe,
         type: 3}
@@ -21442,7 +21442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1157627705, guid: e5374f72e88589045844a529c76d79fe, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1199706241, guid: e5374f72e88589045844a529c76d79fe, type: 3}
       propertyPath: m_StaticEditorFlags

@@ -94,10 +94,11 @@ public class MainMenuManager : MonoBehaviour
                selectorObject.position = new Vector3(selectorObject.position.x, goBackButton.transform.position.y);
                return;
            case ButtonSwitch.QuitButton:
+                /*
                if (Application.isEditor)
                {
                    UnityEditor.EditorApplication.isPlaying = false;
-               }
+               }*/
                Application.Quit();
                return;
 
