@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LavaWalls
+  m_Shader: {fileID: 4800000, guid: 0e7f28e0a65a69f4d981585cd778a121, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 733a149a785b5544185cc5b1ac7bc894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RockTex:
+        m_Texture: {fileID: 2800000, guid: 0b83d3bb02b01c844b97ea4fca9672f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 733a149a785b5544185cc5b1ac7bc894, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 645559849f5afdd42bbe90de5f985ddf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Float0: 1
+    - _Float1: 0.26
+    - _Float2: 0.63
+    - _Lava: 0.63
+    - _LavaAmount: 0.57
+    - _LavaEmissionMarker: 0.69853616
+    - _Lerp: 1
+    - _NoiseScale: 1
+    - _OriginalTexIntensity: 0.2
+    - __dirty: 0
+    m_Colors:
+    - _LavaEmissionColor: {r: 2.251309, g: 0, b: 0.13242994, a: 0}
+    - _LavaFlowMultiplier: {r: 1, g: 1, b: 0, a: 0}
+    - _LavaMoveDir: {r: 1, g: 0.2, b: 0, a: 0}
+    - _LavaMoveSpeed: {r: 0.1, g: 0.04, b: 0, a: 0}
+    - _Tiling: {r: 0.02, g: 0.02, b: 0, a: 0}
+    - _Tiling2: {r: 0.03, g: 0.03, b: 0, a: 0}
+    - _u: {r: 0.1, g: 0, b: 0, a: 0}

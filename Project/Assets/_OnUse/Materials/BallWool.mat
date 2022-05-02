@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BallWool
+  m_Shader: {fileID: 4800000, guid: f9852c9957dbc4740a7b8d543eec0d85, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: f9f3d0a8190aa1f4bb8b320a39046e5f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 29c9456704da737418b61f01f277e89d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: f17a5a70fe1af2040941dea792c0da1c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _fabric_0008_base_color_2k:
+        m_Texture: {fileID: 2800000, guid: d4d1563165f96ad4bb78a8cb3ae67672, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _fabric_0008_roughness_2k:
+        m_Texture: {fileID: 2800000, guid: 1af7b4bf648bd994aa39a722e7726b8e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _2ndBorderIntensity: 0.48
+    - _ASEOutlineWidth: 0.001
+    - _BumpIntensity: 0.01
+    - _EdgeLength: 15
+    - _EmissionIntensity: 20.4
+    - _Float0: 0.05
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    - _MovementSpeed: 0.1
+    - _NoiseAbundance: 0.09
+    - _NoiseTiling: 23.09
+    - _Shade3Intensity: 0.31
+    - _Smoothness: 0
+    - _Step1Border: 0.57
+    - _Step2Border: 0.83
+    - _Tiling: 0.02
+    - __dirty: 0
+    m_Colors:
+    - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BaseColor: {r: 0, g: 1, b: 0.2531309, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ConveyorSpeed: {r: 0, g: 0.66, b: 0, a: 0}
+    - _EmissionColor: {r: 0.57252806, g: 1, b: 0.495283, a: 0}
+    - _Tint: {r: 0, g: 1, b: 0.08387089, a: 0}

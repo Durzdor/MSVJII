@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 3DArrow 2
+  m_Shader: {fileID: 4800000, guid: 8bfc19cc3202a2940beec9da7e1b0242, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _DepthFadeDistance: 0.49
+    - _LineAmount: 96.59
+    - _LineMoveSpeed: 90.5
+    - _TopMaskFalloff: 4.77
+    - _TopMaskIntensity: 4.16
+    - __dirty: 0
+    m_Colors:
+    - _Color0: {r: 0.32987696, g: 0, b: 0, a: 0}
+    - _DepthFadeColor: {r: 0.8301887, g: 0.53648984, b: 0.53648984, a: 0}
+    - _DetailEmissionTint: {r: 0.4811321, g: 0.0068084607, b: 0.07525901, a: 0}
+    - _EmissionTint: {r: 0.30003121, g: 0.036267508, b: 0.3148679, a: 0}

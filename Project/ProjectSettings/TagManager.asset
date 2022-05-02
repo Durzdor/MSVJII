@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - BallStartPosition
+  - Hole
+  - Floor
+  - Wall
+  - 3DArrow
+  - UI
+  - StickySurface
+  - BackgroundMusi
   layers:
   - Default
   - TransparentFX
@@ -16,12 +23,12 @@ TagManager:
   - 
   - Ball
   - Walls
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TriggerAreas
+  - Obstacle
+  - Floor
+  - PostProcessTrigger
+  - Shark
+  - Dragon
   - 
   - 
   - 

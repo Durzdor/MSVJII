@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Electricty
+  m_Shader: {fileID: 4800000, guid: 341f8025c4d802244900baa025e71ed9, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _DeformationIntensity: 1.32
+    - _DeformationMaskFallOff: 0.95
+    - _DeformationMaskIntensity: 0
+    - _DeformationScale: 1.31
+    - _DeformationSpeed: 0.06
+    - _ElectricScale: 5
+    - _ElectricScale1: 5
+    - _ElectricScale2: 5
+    - _ElectricityBoltWidth: 0.29
+    - _ElectricitySpeed: 0.1
+    - _ElectricitySpeed1: 1
+    - _ElectricitySpeed2: 0.1
+    - _ElectrictyBoltWidth2: 0.34
+    - _ElecttrictyPower: 2.7
+    - _FresnelPower: 32.7
+    - _FresnelScale: 1
+    - __dirty: 0
+    m_Colors:
+    - _DeformationDir: {r: 0, g: 1, b: 0, a: 0}
+    - _ElectricityDir: {r: 0, g: 1, b: 0, a: 0}
+    - _ElectricityDir1: {r: 0, g: 1, b: 0, a: 0}
+    - _ElectricityDir2: {r: 0, g: -1, b: 0, a: 0}
+    - _FresnelColor: {r: 1, g: 0.49824244, b: 0, a: 0}
+    - _LightningColor: {r: 1.2496295, g: 0.38314113, b: 0.52168036, a: 0}
+    - _RaysColor: {r: 1.6152706, g: 0, b: 4, a: 0}
+    - _SecondaryEmissionColor: {r: 0.9433962, g: 0.7268494, b: 0.35154858, a: 0}
